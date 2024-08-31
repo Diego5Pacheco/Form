@@ -3,7 +3,7 @@ document.getElementById('submitBtn').addEventListener('click', function () {
     var msg = "Infelizmente, o botão de envio ainda não está operacional.";
     var msgElement = document.getElementById('msg');
     msgElement.textContent = msg;
-    msgElement.style.display = 'block';
+    msgElement.style.display = 'inline-block';
 });
 
 // Função para limpar o formulário quando o botão Limpar é clicado
