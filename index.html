@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+
+<body>
+  <section>
+    <form id="formulario" action="enviar" method="POST">
+      <fieldset>
+        <legend>Formulário de Programação</legend>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" size="30" maxlength="50" required>
+        <br><br>
+
+        <fieldset>
+          <legend>Linguagem que tem Interesse</legend>
+          <input type="checkbox" id="c++" name="linguagem[]" value="c++">
+          <label for="c++">C++</label>
+
+          <input type="checkbox" id="php" name="linguagem[]" value="php">
+          <label for="php">PHP</label>
+
+          <input type="checkbox" id="delphi" name="linguagem[]" value="delphi">
+          <label for="delphi">Delphi</label>
+
+          <input type="checkbox" id="java" name="linguagem[]" value="java">
+          <label for="java">Java</label>
+
+          <input type="checkbox" id="python" name="linguagem[]" value="python">
+          <label for="python">Python</label>
+
+          <input type="checkbox" id="html" name="linguagem[]" value="html">
+          <label for="html">Html</label>
+
+          <input type="checkbox" id="css" name="linguagem[]" value="css">
+          <label for="css">CSS</label>
+
+          <input type="checkbox" id="js" name="linguagem[]" value="js">
+          <label for="js">Java Script</label>
+
+          <input type="checkbox" id="kotlin" name="linguagem[]" value="kotlin">
+          <label for="kotlin">Kotlin</label>
+
+          <input type="checkbox" id="sql" name="linguagem[]" value="sql">
+          <label for="sql">SQL</label>
+          <br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Linguagem que irá cursar agora</legend>
+          <input type="radio" id="curso_cbuilder" name="curso" value="cbuilder">
+          <label for="curso_c++">C++</label>
+
+          <input type="radio" id="curso_php" name="curso" value="php">
+          <label for="curso_php">PHP</label>
+
+          <input type="radio" id="curso_delphi" name="curso" value="delphi">
+          <label for="curso_delphi">Delphi</label>
+
+          <input type="radio" id="curso_java" name="curso" value="java">
+          <label for="curso_java">Java</label>
+
+          <input type="radio" id="curso_python" name="curso" value="python">
+          <label for="curso_python">Python</label>
+
+          <input type="radio" id="curso_html" name="curso" value="html">
+          <label for="curso_html">Html</label>
+
+          <input type="radio" id="curso_css" name="curso" value="css">
+          <label for="curso_css">CSS</label>
+
+          <input type="radio" id="curso_JS" name="curso" value="js">
+          <label for="curso_JS">Java Script</label>
+
+          <input type="radio" id="curso_kotlin" name="curso" value="kotlin">
+          <label for="curso_kotlin">Kotlin</label>
+
+          <input type="radio" id="curso_sql" name="curso" value="sql">
+          <label for="curso_sql">SQL</label>
+          <br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Linguagem que mais domina</legend>
+          <select name="d1">
+            <option value="none" selected>Nunhuma</option>
+            <option value="c++">C++</option>
+            <option value="php">PHP</option>
+            <option value="delphi">Delphi</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="html">Html</option>
+            <option value="css">CSS</option>
+            <option value="js">Java Script</option>
+            <option value="kotlin">Kotlin</option>
+            <option value="sql">SQL</option>
+          </select>
+          <br><br>
+        </fieldset>
+
+        <br>
+        <label for="message">Mensagem:</label>
+        <br>
+        <textarea id="message" name="message" rows="3" cols="25" required></textarea>
+        <br>
+
+        <button id="submitBtn" type="submit">Enviar</button>
+        <button id="clearBtn" type="button">Limpar</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <p id="msg">Este formulário é apenas um treino, portanto, nem todas as funções estão operacionais.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
